@@ -2,7 +2,7 @@
 // @name         Battery Notifier for chrome on google/bing
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Notify when battery reaches 30%
+// @description  Notify when battery reaches low
 // @author       Grok
 // @match        https://www.bing.com/*
 // @match        https://www.google.com/*
@@ -32,8 +32,8 @@
         // Convert level to percentage
         const percentage = Math.round(level * 100);
 
-        // Check if battery is at or below 30%
-        if (percentage <= 30) {
+        // Check if battery is at or below percent
+        if (percentage <= 35) {
             // Create notification
             showNotification(percentage);
         }
