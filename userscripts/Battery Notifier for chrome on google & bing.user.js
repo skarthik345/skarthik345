@@ -6,6 +6,7 @@
 // @author       Grok
 // @match        https://www.bing.com/*
 // @match        https://www.google.com/*
+// @match        *://*.microsoft.com/*
 // @grant        none
 // ==/UserScript==
 
